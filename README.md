@@ -38,17 +38,13 @@ Welcome to our Online Courses Website, a comprehensive platform offering a wide 
 
 Here's a glimpse of what our platform looks like:
 
-![Screenshot 5](https://i.postimg.cc/Vd03y9x4/screencapture-localhost-8080-login-2023-11-21-21-42-19.png)
+![Screenshot 1](https://i.postimg.cc/prFmG3T6/Screenshot-2023-11-21-171802.png)
+![Screenshot 2](https://i.postimg.cc/WtchQSqb/screencapture-localhost-8080-login-2023-11-21-21-42-19.png)
+![Screenshot 3](https://i.postimg.cc/kXSSfRRg/screencapture-localhost-8080-2023-11-21-18-05-38.png)
+![Screenshot 4](https://i.postimg.cc/2jVXGYdS/screencapture-localhost-8080-courses-2023-11-21-18-25-16.png)
+![Screenshot 5](https://i.postimg.cc/yYRpqTbq/screencapture-localhost-8080-contact-2023-11-21-18-29-35.png)
+![Screenshot 6](https://i.postimg.cc/Qdr4jW2F/screencapture-localhost-8080-about-2023-11-21-18-28-32.png)
 
-![Screenshot 6](https://i.postimg.cc/w1hZMqTm/Screenshot-2023-11-21-171802.png)
-
-![Screenshot 1](https://i.postimg.cc/bZNNHBDd/screencapture-localhost-8080-2023-11-21-18-05-38.png)
-
-![Screenshot 2](https://i.postimg.cc/2bJ2TMSY/screencapture-localhost-8080-about-2023-11-21-18-28-32.png)
-
-![Screenshot 3](https://i.postimg.cc/rdfhRK6K/screencapture-localhost-8080-contact-2023-11-21-18-29-35.png)
-
-![Screenshot 4](https://i.postimg.cc/qtJb725P/screencapture-localhost-8080-courses-2023-11-21-18-25-16.png)
 
 ## Feedback and Contributions
 
