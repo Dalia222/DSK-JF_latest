@@ -38,14 +38,17 @@ Welcome to our Online Courses Website, a comprehensive platform offering a wide 
 
 Here's a glimpse of what our platform looks like:
 
-![Course Website Screenshot](https://i.postimg.cc/QdpS08KC/995d4706-a44f-4332-9cee-a07af22e3523.jpg)
+![Screenshot 5](https://i.postimg.cc/Vd03y9x4/screencapture-localhost-8080-login-2023-11-21-21-42-19.png)
 
-![Course Website Screenshot](https://i.postimg.cc/Y92Xv599/5daebea9-35d8-4b45-b7b1-3d17b5ade340.jpg)
+![Screenshot 6](https://i.postimg.cc/w1hZMqTm/Screenshot-2023-11-21-171802.png)
 
-![Course Website Screenshot](https://i.postimg.cc/ZRqcb67v/6563af75-63a8-405c-a199-1d7289fcb896.jpg)
+![Screenshot 1](https://i.postimg.cc/bZNNHBDd/screencapture-localhost-8080-2023-11-21-18-05-38.png)
 
-![Course Website Screenshot](https://i.postimg.cc/0NPn4T7f/de7470d6-832c-4102-b7bf-c8255d37b12d.jpg)
+![Screenshot 2](https://i.postimg.cc/2bJ2TMSY/screencapture-localhost-8080-about-2023-11-21-18-28-32.png)
 
+![Screenshot 3](https://i.postimg.cc/rdfhRK6K/screencapture-localhost-8080-contact-2023-11-21-18-29-35.png)
+
+![Screenshot 4](https://i.postimg.cc/qtJb725P/screencapture-localhost-8080-courses-2023-11-21-18-25-16.png)
 
 ## Feedback and Contributions
 
