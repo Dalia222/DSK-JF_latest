@@ -1,0 +1,206 @@
+body{
+  overflow-x: hidden;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+
+}
+
+.title input {
+  border: none;
+  width: 220px;
+  outline: none;
+  font-size: 35px;
+  text-transform: capitalize;
+}
+.fa-pencil {
+  cursor: pointer;
+  color: #555;
+}
+
+.fa-pencil:hover {
+  color: #000000;
+}
+
+/* add-menu */
+.add {
+  background-color: rgb(32, 101, 209);
+  box-shadow: rgba(32, 101, 209, 0.24) 0px 8px 16px 0px;
+}
+.menu-container {
+  position: relative;
+}
+.menu {
+  opacity: 0;
+  user-select: none;
+  top: 50px;
+  right: 30px;
+  position: absolute;
+  background-color: #eee;
+  width: fit-content;
+  padding: 6px 16px;
+  box-shadow: rgba(83, 89, 100, 0.24) 0px 8px 16px 0px;
+  border-radius: 6px;
+  transform: translate(200px, -200px);
+  transition: 0.2s;
+  text-align: center;
+  z-index: 999;
+}
+.menu {
+  opacity: 0;
+  position: absolute;
+  right: -10px;
+  top: 150%;
+  background-color: #f8f8f8;
+  width: 200px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 7px #bebebe;
+  transition: 0.3s;
+  pointer-events: none;
+}
+.menu.activee {
+  top: 110%;
+  opacity: 1;
+  pointer-events: all;
+  transform: translate(0);
+}
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.menu ul li {
+  padding: 13px 10px;
+}
+.menu ul li:hover {
+  background-color: #e4e3e3;
+}
+.menu ul li:not(:last-child) {
+  border-bottom: 1px solid #ddd;
+}
+.menu ul li a {
+  color: black;
+  text-decoration: none;
+}
+.display {
+  margin-top: 20px;
+}
+
+.returnToHome {
+  position: absolute;
+  bottom: 2%;
+  left: 5%;
+  border-color: rgb(72, 0, 87);
+  color: rgb(106, 0, 112);
+  text-decoration: none;
+}
+.returnToCourse {
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  border-color: rgb(32, 101, 209);
+  color: rgb(0, 43, 112);
+  text-decoration: none;
+}
+
+/* Display cards */
+.card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  margin-top: 5%;
+  /* margin-left: 5%; */
+  display: inline-block;
+}
+
+.my-links,
+.my-files,
+.my-submissions,
+.my-projects {
+  font-family: Arial, sans-serif;
+}
+
+.my-links h2,
+.my-files h2,
+.my-submissions h2,
+.my-projects h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.my-submissions h3,
+.my-projects h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.my-submissions p,
+.my-projects p {
+  font-size: 14px;
+  color: #555555;
+  margin-top: 5px;
+}
+
+.my-links a,
+.my-files a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.my-links a:hover,
+.my-files a:hover {
+  text-decoration: underline;
+}
+
+.my-links .deleteLink,
+.my-files .deleteFile,
+.my-submissions .deleteSubmission,
+.my-projects .deleteProject {
+  background-color: #cc0014;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.my-links .deleteLink:hover,
+.my-files .deleteFile:hover,
+.my-submissions .deleteSubmission:hover,
+.my-projects .deleteProject:hover {
+  background-color: #b80012;
+}
+
+.my-links p,
+.my-files p,
+.my-submissions p,
+.my-projects p {
+  font-size: 16px;
+  color: #888888;
+  margin-top: 10px;
+}
+
+/* View students */
+.view-students a {
+  display: inline-block;
+  background-color: #00458e;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  position: absolute;
+  bottom: 5%;
+  right: 1%;
+}
+
+.view-students a:hover {
+  background-color: #0056b3;
+}

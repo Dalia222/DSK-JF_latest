@@ -1,0 +1,271 @@
+/* Main */
+main {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Course Inner Section */
+#course-inner {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.overview {
+  width: 100%;
+  max-width: 900px;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.course-img {
+  width: 90%;
+  max-width: 500px;
+  /* height: auto; */
+  border-radius: 8px;
+  margin: 0 auto; /* Center the image horizontally /
+  display: block; / Ensures that margin: 0 auto works */
+  display:flex ;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+
+.course-head {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.c-name h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.star {
+  color: #ffd700;
+  font-size: 16px;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+/* Instructor section */
+.instructor-section {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.instructor-section h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.instructor-section img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Useful Links section */
+.useful-links {
+  margin-bottom: 20px;
+}
+
+.useful-links h3 {
+  color: #065ebb;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.my-links div {
+  margin-bottom: 5px;
+}
+
+.my-links a {
+  color: #333;
+  text-decoration: none;
+}
+
+/* Course Files section */
+.course-files {
+  margin-bottom: 20px;
+}
+
+.course-files h3 {
+  color: #0056b3;
+
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.course-files div {
+  margin-bottom: 5px;
+}
+
+.course-files a {
+  color: #333;
+  text-decoration: none;
+}
+
+/* Course Submission section */
+.course-submission {
+  margin-bottom: 20px;
+}
+
+.course-submission h3 {
+  color: #0056b3;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.course-submission div {
+  margin-bottom: 15px;
+}
+.deadline{
+  color: red;
+}
+
+/* Course Project section */
+.course-project {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+
+.course-project h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-left: 35%;
+}
+
+.course-project div {
+  margin-bottom: 15px;
+}
+.deadline {
+  color: red;
+}
+.project-btn {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.project-btn .viewDetails  {
+  display: inline-block;
+  margin-left: 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.project-btn .viewDetails:hover {
+  background-color: #0056b3;
+  color: white;
+}
+.project-btn button {
+  display: inline-block;
+  margin-left: 10px;
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  border: none;
+}
+
+.project-btn button:hover {
+  background-color: #17662a;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .overview {
+    max-width: 100%;
+  }
+
+  .project-btn {
+    justify-content: center;
+  }
+
+  .project-btn a {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
+/* Course Project section */
+.course-project-card {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.course-project-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.course-project-card p {
+  margin-bottom: 10px;
+}
+
+
+
+
+
+
+/* view details  */
+.view-project {
+  margin: 10px;
+}
+
+.view-project-form {
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+  color: #333;
+}
+
+.project-description {
+  margin-top: 10px;
+  color: #555;
+}
+
+.project-details {
+  margin-top: 20px;
+}
+
+.detail {
+  margin-bottom: 8px;
+}
+
+.detail strong {
+  font-weight: bold;
+}
+
+.detail:last-child {
+  margin-bottom: 0;
+}

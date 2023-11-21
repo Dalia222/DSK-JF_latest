@@ -1,0 +1,268 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #23232e;
+  border-radius: 8px;
+  margin-left: 1%;
+}
+
+h1 {
+  text-align: center;
+  flex-grow: 1;
+  color: #ffffff;
+}
+.new-user {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(0, 38, 98, 0.24) 0px 8px 16px 0px;
+  color: #090042;
+}
+.add-new-user {
+  top: 70px;
+  right: 80px;
+  position: absolute;
+  background-color: #eee;
+  width: fit-content;
+  padding: 6px 16px;
+  box-shadow: rgba(83, 89, 100, 0.24) 0px 8px 16px 0px;
+  border-radius: 6px;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-100px);
+  transition: 0.3s;
+  text-align: center;
+  z-index: 999;
+}
+#error {
+  margin: 10px;
+}
+.add-new-user.activee {
+  pointer-events: all;
+  opacity: 1;
+  transform: translateY(0);
+}
+.add-new-user div {
+  margin: 3px;
+  display: flex;
+  justify-content: space-between;
+}
+.add-new-user div input {
+  border: none;
+  border-bottom: 1px solid rgb(76, 139, 240);
+  padding: 5px;
+  margin-left: 5px;
+  border-radius: 5px 3px;
+  transition: 0.1s;
+}
+.add-new-user div input:focus {
+  outline: none;
+  border-bottom: 3px solid rgb(76, 139, 240);
+}
+.role {
+  padding: 10px 0;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.role div input {
+  margin-right: 10px;
+}
+#submit {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  background-color: rgb(45, 182, 27);
+  box-shadow: rgba(38, 209, 32, 0.24) 0px 8px 16px 0px;
+}
+form div:last-child {
+  display: flex;
+  justify-content: flex-end;
+}
+table {
+  width: 100%;
+  margin-left: 3%;
+}
+th > div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+.search {
+  border: 1.5px solid #898686;
+  border-radius: 5px;
+  width: 240px;
+  height: 40px;
+  position: relative;
+  cursor: text;
+}
+.search input,
+.search i {
+  background: transparent;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translateY(-50%);
+  outline: none;
+  border: none;
+  cursor: text;
+}
+.search i {
+  left: 10px;
+}
+.filter {
+  border: none;
+  font-size: 30px;
+  background: transparent;
+  color: black;
+  cursor: pointer;
+}
+.filter-options {
+  position: absolute;
+  top: -10px;
+  right: 120px;
+  background-color: #dddddd;
+  padding: 20px;
+  z-index: 999999px;
+  width: fit-content;
+}
+.filter-options label {
+  white-space: nowrap;
+}
+td,
+th {
+  border-bottom: 1px solid #dddddd;
+  text-align: left;
+  padding: 10px;
+  position: relative;
+}
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+.removebtn {
+  color: red;
+}
+.ban {
+  color: rgb(28, 0, 92);
+}
+.container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.container img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+td input {
+  border: none;
+  outline: none;
+  cursor: default;
+}
+.edite-input {
+  cursor: text;
+  border-bottom: 1px solid rgb(76, 139, 240);
+}
+.active span {
+  color: green;
+  font-weight: 700;
+  border: 2px solid green;
+  padding: 4px 7px;
+  border-radius: 30px;
+}
+.banned span {
+  color: red;
+  font-weight: 700;
+  border: 2px solid red;
+  padding: 4px 7px;
+  border-radius: 30px;
+}
+/* Filter card */
+
+.dots {
+  background: transparent;
+  color: black;
+}
+.options {
+  pointer-events: none;
+  opacity: 0;
+  transform: translateY(-50%);
+  z-index: 10;
+  position: absolute;
+  top: 85%;
+  right: 50px;
+}
+.options.showList {
+  pointer-events: all;
+  opacity: 1;
+  transform: translateY(0);
+}
+.options ul {
+  list-style: none;
+}
+.options ul li {
+  padding: 3px 5px;
+  white-space: nowrap;
+  background-color: #eee;
+}
+.options ul li:hover {
+  background-color: #e2e2e2;
+}
+.options ul li:not(:last-child) {
+  border-bottom: 1px solid grey;
+}
+.options ul li button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  background: transparent;
+  border: none;
+}
+.no-data {
+  user-select: none;
+  text-align: center;
+  font-size: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.pagination {
+  width: 90%;
+  position: fixed;
+  bottom: 3%;
+}
+.pagination ul {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  list-style: none;
+}
+.pagination ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  width: 30px;
+  height: 30px;
+  padding: 7px 7px;
+  text-decoration: none;
+  background-color: #eee;
+  color: black;
+  border-radius: 50%;
+}
+.pagination ul li a:hover {
+  background-color: #e2e2e2;
+}

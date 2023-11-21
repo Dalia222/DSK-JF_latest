@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- nav css -->
+    <link rel="stylesheet" href="/css/instructor/nav.css" />
+    <!-- home css -->
+    <link rel="stylesheet" href="/css/instructor/home.css" />
+
+    <title>Instructor Page</title>
+  </head>
+
+  <body>
+    <!-- My Courses section  -->
+    <%- include("./nav.ejs") %>
+    <main>
+        
+    </main>
+   
+
+    <!-- footer  -->
+    <footer>
+      <div class="copywrite">
+        <p>Copyright @2023 All rights reserved</p>
+        <div class="pro-links">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-linkedin-in"></i>
+        </div>
+      </div>
+    </footer>
+
+    <!-- font-awesome  -->
+    <script
+      src="https://kit.fontawesome.com/0b0cd0c012.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- profile-menu -->
+    <script>
+      let menu = document.getElementById("profileMenu");
+
+      function showMenu() {
+        menu.classList.toggle("active-list");
+      }
+      document.addEventListener("click", function (e) {
+        if (
+          menu.classList.contains("active-list") &&
+          !menu.contains(e.target) &&
+          !document.getElementById("profilePic").contains(e.target)
+        ) {
+          menu.classList.remove("active-list");
+        }
+      });
+    </script>
+
+    <!-- nav on scroll -->
+    <script>
+      onscroll = () => {
+        if (window.scrollY > 5) {
+          document.getElementById("nav").classList.add("scroll");
+        } else {
+          document.getElementById("nav").classList.remove("scroll");
+        }
+      };
+    </script>
+
+    <!-- search -->
+    <script>
+      const search = document.querySelector(".search");
+      const btn = document.querySelector(".btn");
+      const input = document.querySelector(".input");
+
+      btn.addEventListener("click", () => {
+        search.classList.toggle("active");
+        input.focus();
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+<nav id="nav">
+  <img src="/img/logos/DSK-JF-drak-transparent-logo.png" alt="logo" />
+
+  <div class="navigation">
+    <div class="bell">
+      <button>
+        <i class="fas fa-bell"></i>
+      </button>
+    </div>
+
+    <div class="profile">
+      <img
+        src="<%=user.profilePic%>"
+        alt="profile picture"
+        onclick="showMenu()"
+        id="profilePic"
+      />
+      <div class="list" id="list">
+        <ul>
+          <li>
+            <a href="/instructor/<%= user._id %>/settings"
+              >Manage your account</a
+            >
+          </li>
+          <li><a href="/logout">Log out</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+<!-- nav on scroll -->
+<script>
+  onscroll = () => {
+    if (window.scrollY > 5) {
+      document.getElementById("nav").classList.add("on-scroll");
+    } else {
+      document.getElementById("nav").classList.remove("on-scroll");
+    }
+  };
+</script>
+<!-- profile-menu -->
+<script>
+  const menu = document.getElementById("list");
+
+  function showMenu() {
+    menu.classList.toggle("active-list");
+  }
+
+  document.addEventListener("click", function (e) {
+    if (
+      menu.classList.contains("active-list") &&
+      !menu.contains(e.target) &&
+      !document.getElementById("profilePic").contains(e.target)
+    ) {
+      menu.classList.remove("active-list");
+    }
+  });
+</script>

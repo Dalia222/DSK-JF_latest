@@ -1,0 +1,56 @@
+#instructorName {
+  width: 173px;
+}
+
+form div:last-child {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 10px;
+}
+
+.courses {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10%;
+  margin: 4%;
+  border-bottom: #23232e79 1px solid;
+}
+
+.card {
+  width: 200px;
+  margin-bottom: 20px;
+  margin-top: 25px;
+  border: 3px solid #e5e5e5;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(22, 22, 22, 0.1);
+  transition: transform 0.3s ease-in-out;
+  background-color: #ffffff;
+  padding: 10px;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+    rgba(100, 100, 126, 0.25) 0px 50px 100px -20px,
+    rgba(167, 167, 167, 0.3) 0px 30px 60px -30px;
+}
+
+.card:hover {
+  transform: scale(1.09);
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.article-body {
+  padding: 10px;
+}
+
+.article-body h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+  color: #333333;
+}
